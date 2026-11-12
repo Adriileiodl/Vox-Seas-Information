@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vox Seas — Fã Site</title>
+  <meta name="description" content="Site de fãs do jogo Vox Seas (Roblox)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Partículas / bolhas -->
+  <div class="bubbles" id="bubbles"></div>
+
+  <!-- ===== POP-UP DE IDIOMA (aparece 1x por dia) ===== -->
+  <div class="lang-overlay" id="langOverlay" role="dialog" aria-modal="true" aria-labelledby="langTitle">
+    <div class="lang-box">
+      <div class="lang-anchor">⚓</div>
+      <h2 id="langTitle">Qual linguagem quer colocar?</h2>
+      <p class="lang-sub">Which language? · ¿Qué idioma?</p>
+      <div class="lang-options">
+        <button class="lang-btn" data-lang="pt"><span class="flag">🇧🇷</span><span>Português</span></button>
+        <button class="lang-btn" data-lang="en"><span class="flag">🇺🇸</span><span>English</span></button>
+        <button class="lang-btn" data-lang="es"><span class="flag">🇪🇸</span><span>Español</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav">
+    <a href="#home" class="brand">⚓ VOX SEAS</a>
+    <nav class="nav-links">
+      <a href="#about" data-i18n="nav_about">Sobre</a>
+      <a href="#fruits" data-i18n="nav_fruits">Frutas</a>
+      <a href="#map" data-i18n="nav_map">Mapa</a>
+      <a href="#codes" data-i18n="nav_codes">Códigos</a>
+      <a href="#news" data-i18n="nav_news">Novidades</a>
+    </nav>
+    <button class="nav-lang" id="changeLang" title="Language">🌐 <span id="currentLang">PT</span></button>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-tag" data-i18n="hero_tag">⚔️ Aventura pirata no Roblox</p>
+      <h1 class="logo">VOX <span>SEAS</span></h1>
+      <p class="hero-sub" data-i18n="hero_sub">Navegue pelos mares, enfrente monstros marinhos e domine as ilhas.</p>
+      <div class="soon-badge" data-i18n="soon">EM BREVE...</div>
+    </div>
+
+    <!-- Ondas animadas -->
+    <div class="waves">
+      <svg viewBox="0 0 1440 200" preserveAspectRatio="none" class="wave w1"><path d="M0,100 C240,180 480,20 720,100 C960,180 1200,20 1440,100 L1440,200 L0,200 Z"/></svg>
+      <svg viewBox="0 0 1440 200" preserveAspectRatio="none" class="wave w2"><path d="M0,120 C240,40 480,180 720,110 C960,40 1200,170 1440,100 L1440,200 L0,200 Z"/></svg>
+      <svg viewBox="0 0 1440 200" preserveAspectRatio="none" class="wave w3"><path d="M0,140 C300,80 500,190 760,130 C1000,80 1250,180 1440,130 L1440,200 L0,200 Z"/></svg>
+    </div>
+    <div class="ship">⛵</div>
+  </section>
+
+  <main>
+    <!-- ===== SOBRE ===== -->
+    <section class="section" id="about">
+      <h2 class="title" data-i18n="about_title">Sobre o jogo</h2>
+      <p class="lead" data-i18n="about_text">Vox Seas é um RPG de pirata inspirado em One Piece, onde você faz missões em várias ilhas e luta em PvE e PvP.</p>
+
+      <div class="cards">
+        <article class="card"><div class="icon">🏴‍☠️</div><h3 data-i18n="c1_t">Piratas ou Marinha</h3><p data-i18n="c1_d">Escolha o seu lado logo ao entrar no jogo.</p></article>
+        <article class="card"><div class="icon">🍎</div><h3 data-i18n="c2_t">Vox Fruits</h3><p data-i18n="c2_d">Frutas que dão habilidades poderosas e mudam seu estilo de luta.</p></article>
+        <article class="card"><div class="icon">🐉</div><h3 data-i18n="c3_t">Sea Beasts</h3><p data-i18n="c3_d">Monstros marinhos gigantes que aparecem no oceano como chefes de raid.</p></article>
+        <article class="card"><div class="icon">⚔️</div><h3 data-i18n="c4_t">Estilos de luta</h3><p data-i18n="c4_d">Use espadas, punhos, armas e frutas para evoluir.</p></article>
+        <article class="card"><div class="icon">🚢</div><h3 data-i18n="c5_t">Navios e Tripulação</h3><p data-i18n="c5_d">Compre navios, explore os mares e forme sua própria crew.</p></article>
+        <article class="card"><div class="icon">🏝️</div><h3 data-i18n="c6_t">Ilhas e Chefes</h3><p data-i18n="c6_d">Várias ilhas com inimigos, missões e chefes cada vez mais fortes.</p></article>
+      </div>
+    </section>
+
+    <!-- ===== SEÇÕES EM BREVE ===== -->
+    <section class="section" id="fruits">
+      <h2 class="title" data-i18n="fruits_title">🍎 Frutas</h2>
+      <div class="soon-box"><span data-i18n="soon">EM BREVE...</span></div>
+    </section>
+
+    <section class="section" id="map">
+      <h2 class="title" data-i18n="map_title">🗺️ Mapa e Ilhas</h2>
+      <div class="soon-box"><span data-i18n="soon">EM BREVE...</span></div>
+    </section>
+
+    <section class="section" id="codes">
+      <h2 class="title" data-i18n="codes_title">🎁 Códigos</h2>
+      <div class="soon-box"><span data-i18n="soon">EM BREVE...</span></div>
+    </section>
+
+    <section class="section" id="news">
+      <h2 class="title" data-i18n="news_title">📰 Novidades</h2>
+      <div class="soon-box"><span data-i18n="soon">EM BREVE...</span></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p data-i18n="footer">Site feito por fãs. Não é afiliado ao Roblox nem aos criadores de Vox Seas.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
